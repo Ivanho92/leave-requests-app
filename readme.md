@@ -2,7 +2,7 @@
 ## Introduction
 This web application was created as part of the one-year EPFC course "[Javascript web application](https://www.epfc.eu/formations/javascript-web-app)", as a final year project.
 
-The goal of the app is to replicate a minimalist company's leave requests management tool, where one do the following operations:
+The goal of the app is to replicate a minimalist company's leave requests management tool, where one can do the following operations:
 
  - See the list of leave requests in a summary table
  - Search for specific leave requests and display them above the table
