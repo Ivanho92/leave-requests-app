@@ -1,0 +1,18 @@
+@import "../../../sass/utilities/theme";
+
+.quick-search {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1rem;
+
+    input {
+        padding: .25rem .5rem;
+        border: 1px solid $grey-700;
+    }
+    
+    ul {
+        margin-block: 0;
+    }
+}

@@ -1,0 +1,28 @@
+@import "../../../sass/utilities/theme";
+
+.pagination {
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .25rem;
+        list-style-type: none;
+    }
+    
+    a {
+        display: inline-block;
+        padding: .5rem 1rem;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background-color: $grey-400;
+    }
+
+    a[aria-current="page"] {
+        background-color: $primary-400;
+        color: $light-400;
+        cursor: default;
+    }
+
+}

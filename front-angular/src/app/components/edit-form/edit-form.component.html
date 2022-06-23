@@ -1,0 +1,42 @@
+<form *ngIf="leaveRequest" #leaveRequestForm="ngForm" (ngSubmit)="update(leaveRequestForm);" ngNativeValidate class="stack-sm">
+    <div class="form-group">
+        <label for="employee">Employee</label>
+        <input id="employee" name="employee" required [(ngModel)]="leaveRequest.employee">
+    </div>
+    <div class="form-group">
+        <label for="start-date">Start date</label>
+        <input type="date" id="start-date" name="start-date" required [(ngModel)]="leaveRequest.startDate">
+    </div>
+    <div class="form-group">
+        <label for="end-date">End date</label>
+        <input type="date" id="end-date" name="end-date" required [(ngModel)]="leaveRequest.endDate">
+    </div>
+    <div class="form-group">
+        <label for="category">Category</label>
+        <select name="category" id="category" required [(ngModel)]="leaveRequest.category">
+            <option value="annual">Annual</option>
+            <option value="hospitality">Hospitality</option>
+            <option value="adoption">Adoption</option>
+            <option value="paid-educational">Paid educational</option>
+            <option value="maternity">Maternity</option>
+            <option value="paternity">Paternity</option>
+            <option value="parental">Parental</option>
+            <option value="palliative-care">Palliative care</option>
+            <option value="serious-illness">Serious illness of a household or family member</option>
+            <option value="time-credit">Time credit</option>
+            <option value="short-time-unemployment">Short-term unemployment or circumstance</option>
+            <option value="compelling-reasons">Compelling reasons</option>
+            <option value="political">Political</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="status">Status</label>
+        <select name="status" id="status" required [(ngModel)]="leaveRequest.status">
+            <option value="new">NEW</option>
+            <option value="approved">APPROVED</option>
+            <option value="refused">REFUSED</option>
+            <option value="canceled">CANCELED</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>

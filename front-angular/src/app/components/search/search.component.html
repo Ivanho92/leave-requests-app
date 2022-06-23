@@ -1,0 +1,16 @@
+<div>
+    <div class="quick-search">
+        <label class="sr-only" for="quick-search">Search leave requests</label>
+        <input #searchBox (input)="search(searchBox.value)" name="quick-search" id="quick-search" type="text" placeholder="Search leave requests...">
+    </div>
+
+    <div class="search-result" *ngIf="leaveRequests$">
+        <ul>
+            <li *ngFor="let leaveRequest of leaveRequests$ | async">
+                <a routerLink="/edit/{{leaveRequest._id}}">
+                    {{leaveRequest.employee}}
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

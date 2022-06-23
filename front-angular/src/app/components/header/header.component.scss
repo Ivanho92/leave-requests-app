@@ -1,0 +1,23 @@
+@import "../../../sass/utilities/theme";
+
+.menu {
+    background-color: $primary-400;
+    color: $light-400;
+
+    li {
+        list-style-type: none;
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+    }
+
+    a:hover {
+        border-bottom: 1px solid $light-400;
+    }
+}

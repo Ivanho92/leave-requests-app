@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap'); // Source Sans Pro https://fonts.google.com/specimen/Source+Sans+Pro
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500&display=swap'); // Hind Siliguri https://fonts.google.com/specimen/Hind+Siliguri
+
+$base-size: 1rem;
+
+// Sizes
+$size-200: $base-size * .64;
+$size-300: $base-size * .8;
+$size-400: $base-size * 1;
+$size-500: $base-size * 1.25;
+$size-600: $base-size * 1.563;
+$size-700: $base-size * 1.953;
+
+// Colors
+$primary-300: hsl(209, 78%, 35%);
+$primary-400: hsl(209, 78%, 28%);
+
+$secondary-300: hsl(193, 100%, 60%);
+$secondary-400: hsl(193, 100%, 52%);
+$secondary-500: hsl(193, 100%, 46%);
+
+$danger-300: hsl(0, 99%, 64%);
+$danger-400: hsl(0, 99%, 56%);
+$danger-500: hsl(0, 99%, 45%);
+
+$light-400: hsl(0, 0%, 98%);
+$light-500: hsl(0, 0%, 90%);
+
+$grey-400: hsl(0, 0%, 97%);
+$grey-500: hsl(0, 0%, 94%);
+$grey-600: hsl(0, 0%, 90%);
+$grey-700: hsl(0, 0%, 85%);
+
+$dark-300: hsl(0, 0%, 33%);
+$dark-400: hsl(0, 0%, 9%);
+
+// Fonts
+$font-base: 'Source Sans Pro', sans-serif;
+$font-lead: 'Hind Siliguri', sans-serif;
+
+// Breakpoints
+$breakpoint-md: 670px;

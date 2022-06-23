@@ -1,0 +1,65 @@
+// Global CSS starts
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.5;
+    overflow-x: hidden;
+    font-weight: 500;
+    font-family: $font-base;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+    font-family: $font-lead;
+}
+
+h1 {
+    font-size: $size-700;
+    margin-block-start: .5em;
+    margin-block-end: 1em;
+}
+
+h2,
+h3 {
+    font-size: $size-600;
+}
+
+p {
+    max-width: 65ch;
+}
+
+a {
+    color: currentColor;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+@media (max-width: $breakpoint-md) {
+    table {
+        display: block;
+        overflow-x: scroll;
+    }
+}
+
+th {
+    text-align: left;
+}
+
+:focus {
+    outline: 2px solid $dark-400;
+}
+
+app-footer,
+app-form,
+app-header,
+app-leave-requests,
+app-pagination,
+app-search,
+app-table {
+    display: block;
+}

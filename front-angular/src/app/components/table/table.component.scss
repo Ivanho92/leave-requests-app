@@ -1,0 +1,72 @@
+@import "../../../sass/utilities/theme";
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th svg {
+    display: inline-block;
+    width: .5em;
+    fill: $light-400;
+}
+
+// @media (max-width: $breakpoint-md) {
+//     table th {
+//         font-size: .9em;
+//     }
+// }
+
+table th svg {
+    display: inline-block;
+    width: .4em;
+    fill: $light-400;
+}
+
+table .sort {
+    display: flex;
+    justify-content: space-between;
+    gap: .5em;
+}
+
+table th, table td {
+    padding: $size-200;
+    line-height: 1.1;
+}
+
+table th {
+    border: 1px solid $grey-400;
+}
+
+// table th:not(:last-child) {
+//     cursor: pointer;
+// }
+
+table td {
+    border: 1px solid $grey-400;
+    cursor: default;
+}
+
+.actions {
+    display: flex;
+    gap: .33rem;
+}
+
+table tr:nth-child(even) {
+    background-color: $grey-500;
+}
+
+table tr:hover {
+    background-color: $grey-600;
+}
+
+table th {
+    padding-block: .5rem;
+    text-align: left;
+    background-color: $primary-400;
+    color: $light-400;
+}
+
+table a.btn {
+    text-decoration: none;
+}

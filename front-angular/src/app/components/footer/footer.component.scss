@@ -1,0 +1,10 @@
+@import "../../../sass/utilities/theme";
+
+footer {
+    background-color: $grey-500;
+    color: $dark-400;
+
+    a:hover {
+        color: $dark-300;
+    }
+}

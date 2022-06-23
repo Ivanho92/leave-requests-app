@@ -1,0 +1,49 @@
+.btn {
+    border: none;
+    padding: .5em 1em;
+}
+
+.btn:hover, .btn:active {
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: $light-400;
+    background-color: $secondary-400;
+}
+
+.btn-primary:hover, .btn-primary:active,
+.btn-nav:hover, .btn-nav:active {
+    background-color: $secondary-500;
+}
+
+.btn-danger{
+    color: $light-400;
+    background-color: $danger-400;
+}
+
+.btn-danger:hover, .btn-danger:active {
+    background-color: $danger-500;
+}
+
+.btn-nav {
+    background-color: transparent;
+    padding: .2em .5em;
+}
+
+.btn-nav:hover {
+    background-color: transparent;
+}
+
+.btn-nav[aria-current="page"] {
+    border-bottom: 2px solid $light-400;
+}
+
+.btn-back {
+    // padding-inline: .5rem;
+    text-decoration: none;
+}
+
+.btn-back:hover {
+    text-decoration: underline;
+}
